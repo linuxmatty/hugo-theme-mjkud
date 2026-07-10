@@ -1,0 +1,18 @@
+<header class="site-header">
+  <nav class="site-nav">
+    <a class="logo hdr-center" href="{{ .Site.BaseURL }}" >
+	    <img src="../../logo-red-1200.png", height="45pt">
+      <span class="site-title">{{ .Site.Title }}</span>
+    </a>
+    <button class="hamburger" id="hamburger">
+      <img src="../../hamburger.webp", height="20rem">
+    </button>
+    <ul class="nav-ul hdr-center" id="nav-ul">
+      {{ range.Site.Menus.main }}
+      <li style="padding: 0.8rem;">
+        <a href="{{ .URL }}" class="nav-item">{{ .Name }}</a>
+      </li>
+      {{ end }}
+    </ul>
+  </nav>
+</header>

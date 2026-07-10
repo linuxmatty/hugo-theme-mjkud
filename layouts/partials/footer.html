@@ -1,0 +1,27 @@
+</main>
+	
+<footer>
+	<div class="footer-container">
+		<div class="footer">
+			<div class="footer-heading">
+				<h3 class="footer-heading-main">{{ .Site.Title }}</h3>
+				<p class="footer-text">Written with a healthy dose of hatred towards CSS.<br />Powered by <a href="https://gohugo.io/" style="color: inherit;">Hugo</a>.</p>
+			</div>
+			<div class="footer-heading">
+				<h4 class="footer-heading-h4">Pages</h4>
+				{{ range.Site.Menus.main }}
+					<a class="footer-heading-a" href="{{ .URL }}">{{ .Name }}</a>
+				{{ end }}
+			</div>
+			<div class="footer-heading">
+				<h4 class="footer-heading-h4">Contact</h4>
+				<a class="footer-heading-a" href="mailto:m@mjkud.cz">m@mjkud.cz</a>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+
+</body>
+</html>
